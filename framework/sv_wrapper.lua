@@ -6,7 +6,7 @@ function Initialized()
 		QBCore = true
 		RegisterUsableItem = ESX.RegisterUsableItem
 	elseif Config.Framework == 'QBCORE' then
-		QBCore = exports['qb-core']:GetSharedObject()
+		QBCore = exports['ml-core']:GetSharedObject()
 		ESX = true
 		RegisterUsableItem = QBCore.Functions.CreateUseableItem
 	else
